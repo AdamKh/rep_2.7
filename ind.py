@@ -25,5 +25,6 @@ if __name__ == '__main__':
     mn_x = mn_c.intersection(mn_a.union(mn_b))
     print('\nМножество X = ', mn_x)
 
-    mn_y = mn_a.intersection(mn_u.difference(mn_b)).union(mn_c.difference(mn_d))
+    mn_y = mn_a.intersection(mn_u.difference(mn_b))\
+        .union(mn_c.difference(mn_d))
     print('Множество Y = ', mn_y)
